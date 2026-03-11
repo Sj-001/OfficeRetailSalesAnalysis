@@ -1,0 +1,123 @@
+-- Query 1: Update the Stores table so that all stores have opening on or after 1-Jan-2016, Populate random dates
+
+SELECT * FROM DIMSTORE;
+
+SELECT DATEDIFF(DAY, '2016-01-01', CURRENT_DATE);
+--3721 ~3700
+-- 2016 TO MARCH 2026
+SELECT DATEADD(DAY, UNIFORM(0,3700,RANDOM()), '2016-01-01');
+
+UPDATE DIMSTORE SET STOREOPENINGDATE = DATEADD(DAY, UNIFORM(0,3700,RANDOM()), '2016-01-01');
+
+COMMIT;
+
+-- Query 2: Update the Stores table so that stores with storeID between 91 and 100 are opened in the last 12 months
+
+SELECT * FROM DIMSTORE WHERE STOREID BETWEEN 91 AND 100;
+
+SELECT DATEADD(YEAR, -1, CURRENT_DATE);
+-- 2025-03-10
+SELECT DATEADD(DAY, UNIFORM(0, 360, RANDOM()), '2025-03-10');
+
+UPDATE DIMSTORE SET STOREOPENINGDATE = DATEADD(DAY, UNIFORM(0, 360, RANDOM()), '2025-03-10') WHERE STOREID BETWEEN 91 AND 100;
+
+COMMIT;
+
+-- Query 3: Update the Customer table so that all the customers are at least 12 years old, any customer that is less than 12 years old: Subtract 12 years from there DOB
+
+SELECT * FROM DIMCUSTOMER WHERE DATEOFBIRTH >= DATEADD(YEAR, -12, CURRENT_DATE);
+
+UPDATE DIMCUSTOMER SET DATEOFBIRTH = DATEADD(YEAR, -12, DATEOFBIRTH) WHERE DATEOFBIRTH >= DATEADD(YEAR, -12, CURRENT_DATE);
+
+COMMIT;
+
+-- Query 4: Update the FactOrders table for such rows where orderDate is before the opening date of the store
+
+-- Identify the rows which are to be updated
+SELECT * FROM FACTORDERS F
+JOIN DIMDATE D
+ON F.DATEID = D.DATEID
+JOIN DIMSTORE S
+ON F.STOREID = S.STOREID
+WHERE D.DATE < S.STOREOPENINGDATE;
+
+
+-- setting the new dates
+
+SELECT 
+    F.ORDERID,
+    S.STOREOPENINGDATE,
+    DATEADD(DAY,
+    DATEDIFF(
+        DAY, 
+        S.STOREOPENINGDATE, CURRENT_DATE)* UNIFORM(1, 10, RANDOM())*.1, 
+        S.STOREOPENINGDATE
+    ) AS NEW_ORDER_DATE
+FROM FACTORDERS F
+JOIN DIMDATE D
+ON F.DATEID = D.DATEID
+JOIN DIMSTORE S
+ON F.STOREID = S.STOREID
+WHERE D.DATE < S.STOREOPENINGDATE
+
+-- converting them to dateID
+
+SELECT ORDERID, D.DATEID FROM
+(
+    SELECT 
+        F.ORDERID,
+        S.STOREOPENINGDATE,
+        DATEADD(DAY,
+        DATEDIFF(
+            DAY, 
+            S.STOREOPENINGDATE, CURRENT_DATE)* UNIFORM(1, 10, RANDOM())*.1, 
+            S.STOREOPENINGDATE
+        ) AS NEW_ORDER_DATE
+    FROM FACTORDERS F
+    JOIN DIMDATE D
+    ON F.DATEID = D.DATEID
+    JOIN DIMSTORE S
+    ON F.STOREID = S.STOREID
+    WHERE D.DATE < S.STOREOPENINGDATE
+) O
+JOIN DIMDATE D 
+ON O.NEW_ORDER_DATE = D.DATE;
+
+-- updating the column
+
+UPDATE FACTORDERS F
+SET F.DATEID = R.DATEID 
+FROM (
+    SELECT ORDERID, D.DATEID FROM
+    (
+        SELECT 
+            F.ORDERID,
+            S.STOREOPENINGDATE,
+            DATEADD(DAY,
+            DATEDIFF(
+                DAY, 
+                S.STOREOPENINGDATE, CURRENT_DATE)* UNIFORM(1, 10, RANDOM())*.1, 
+                S.STOREOPENINGDATE
+            ) AS NEW_ORDER_DATE
+        FROM FACTORDERS F
+        JOIN DIMDATE D
+        ON F.DATEID = D.DATEID
+        JOIN DIMSTORE S
+        ON F.STOREID = S.STOREID
+        WHERE D.DATE < S.STOREOPENINGDATE
+    ) O
+    JOIN DIMDATE D 
+    ON O.NEW_ORDER_DATE = D.DATE
+) R
+WHERE F.ORDERID = R.ORDERID;
+
+COMMIT;
+
+-- Query 5: Update FactOrders table to have product ID within 100
+
+UPDATE FACTORDERS SET PRODUCTID = CAST(PRODUCTID/10 AS INT) WHERE PRODUCTID > 100;
+
+COMMIT;
+
+
+

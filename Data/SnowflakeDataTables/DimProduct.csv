@@ -1,0 +1,101 @@
+PRODUCTID,PRODUCTNAME,CATEGORY,BRAND,UNITPRICE
+1,Hiking Backpack,Kitchen & Dining,FakeLuxeAura,713.00
+2,VR Headset,Health & Fitness,FakeUrbanGlow,437.00
+3,Dumbbells,Sports & Recreation,FakeUrbanGlow,262.00
+4,Bicycle,Sports & Recreation,FakeUrbanGlow,170.00
+5,Hiking Boots,Outdoor & Garden,FakeEtherealEdge,537.00
+6,Dehumidifier,Health & Fitness,FakeLuxeAura,453.00
+7,Speaker,Sports & Recreation,FakeVelvelVista,653.00
+8,Sheets,Kitchen & Dining,FakeVelvelVista,110.00
+9,Sheets,Arts & Crafts,FakeVelvelVista,927.00
+10,Laptop,Electronics,FakeEtherealEdge,751.00
+11,Smart Thermostat,Electronics,FakeLuxeAura,139.00
+12,Bird Cage,Arts & Crafts,FakeZenithStyle,954.00
+13,Snorkel Gear,Health & Fitness,FakeVelvelVista,366.00
+14,Vacuum Cleaner,Health & Fitness,FakeVelvelVista,647.00
+15,VR Headset,Sports & Recreation,FakeUrbanGlow,425.00
+16,Bluetooth Speaker,Home & Furniture,FakeUrbanGlow,257.00
+17,Cooler,Pets,FakeVelvelVista,134.00
+18,Soccer Ball,Health & Fitness,FakeZenithStyle,276.00
+19,Snowboard,Outdoor & Garden,FakeVelvelVista,921.00
+20,Sewing Machine,Outdoor & Garden,FakeUrbanGlow,206.00
+21,Tennis Racket,Outdoor & Garden,FakeVelvelVista,564.00
+22,Paddleboard,Sports & Recreation,FakeVelvelVista,240.00
+23,Electric Kettle,Health & Fitness,FakeEtherealEdge,781.00
+24,Hiking Backpack,Home & Furniture,FakeUrbanGlow,540.00
+25,Ski Goggles,Kitchen & Dining,FakeLuxeAura,181.00
+26,Baseball Glove,Electronics,FakeEtherealEdge,520.00
+27,Hammock,Arts & Crafts,FakeZenithStyle,792.00
+28,Soccer Ball,Sports & Recreation,FakeUrbanGlow,585.00
+29,Memory Card,Sports & Recreation,FakeLuxeAura,253.00
+30,Lawn Mower,Pets,FakeUrbanGlow,529.00
+31,Lawn Sprinkler,Toys & Games,FakeLuxeAura,854.00
+32,Puzzle,Home Appliances,FakeVelvelVista,414.00
+33,Life Jacket,Outdoor & Garden,FakeLuxeAura,259.00
+34,Printer,Outdoor & Garden,FakeEtherealEdge,175.00
+35,Treadmill,Outdoor & Garden,FakeZenithStyle,233.00
+36,Washing Machine,Health & Fitness,FakeUrbanGlow,366.00
+37,Life Jacket,Outdoor & Garden,FakeZenithStyle,180.00
+38,Suitcase,Outdoor & Garden,FakeUrbanGlow,161.00
+39,Dehumidifier,Electronics,FakeEtherealEdge,165.00
+40,Jacket,Outdoor & Garden,FakeVelvelVista,229.00
+41,Laptop,Arts & Crafts,FakeUrbanGlow,453.00
+42,Electric Kettle,Sports & Recreation,FakeUrbanGlow,305.00
+43,Kayak,Outdoor & Garden,FakeVelvelVista,515.00
+44,Air Conditioner,Health & Fitness,FakeLuxeAura,549.00
+45,Action Figure,Toys & Games,FakeLuxeAura,385.00
+46,Fish Food,Health & Fitness,FakeVelvelVista,948.00
+47,Golf Clubs,Arts & Crafts,FakeUrbanGlow,696.00
+48,Garden Tools,Toys & Games,FakeLuxeAura,465.00
+49,Ski Poles,Outdoor & Garden,FakeVelvelVista,656.00
+50,Supplement,Home & Furniture,FakeEtherealEdge,363.00
+51,Basketball,Outdoor & Garden,FakeEtherealEdge,319.00
+52,Binoculars,Health & Fitness,FakeEtherealEdge,562.00
+53,Portable Hard Drive,Kitchen & Dining,FakeZenithStyle,374.00
+54,Cat Tree,Electronics,FakeLuxeAura,655.00
+55,Board Game,Outdoor & Garden,FakeLuxeAura,405.00
+56,Bird Cage,Home Appliances,FakeEtherealEdge,538.00
+57,Rain Jacket,Home Appliances,FakeVelvelVista,914.00
+58,Doll,Home & Furniture,FakeEtherealEdge,724.00
+59,BBQ Grill,Home Appliances,FakeLuxeAura,418.00
+60,Elliptical,Pets,FakeEtherealEdge,425.00
+61,Laser Printer,Kitchen & Dining,FakeEtherealEdge,283.00
+62,Tent,Toys & Games,FakeZenithStyle,564.00
+63,Smartwatch,Sports & Recreation,FakeUrbanGlow,821.00
+64,Hiking Backpack,Home & Furniture,FakeZenithStyle,692.00
+65,Plant Pot,Health & Fitness,FakeEtherealEdge,744.00
+66,Electric Scooter,Arts & Crafts,FakeLuxeAura,744.00
+67,Cooler,Outdoor & Garden,FakeVelvelVista,260.00
+68,Glasses,Arts & Crafts,FakeVelvelVista,380.00
+69,Pet Bed,Arts & Crafts,FakeVelvelVista,609.00
+70,Electric Car,Home & Furniture,FakeVelvelVista,408.00
+71,Power Bank,Electronics,FakeZenithStyle,860.00
+72,Dog Leash,Health & Fitness,FakeZenithStyle,825.00
+73,Mattress,Kitchen & Dining,FakeVelvelVista,312.00
+74,Garden Hose,Home Appliances,FakeUrbanGlow,124.00
+75,BBQ Grill,Health & Fitness,FakeVelvelVista,528.00
+76,Laser Printer,Arts & Crafts,FakeLuxeAura,778.00
+77,3D Printer,Outdoor & Garden,FakeZenithStyle,145.00
+78,Tennis Racket,Outdoor & Garden,FakeUrbanGlow,291.00
+79,Paddleboard,Sports & Recreation,FakeLuxeAura,339.00
+80,Sewing Machine,Outdoor & Garden,FakeZenithStyle,981.00
+81,Dog House,Kitchen & Dining,FakeEtherealEdge,612.00
+82,Mattress,Pets,FakeLuxeAura,864.00
+83,Yoga Mat,Toys & Games,FakeZenithStyle,405.00
+84,Showerhead,Kitchen & Dining,FakeUrbanGlow,190.00
+85,Power Bank,Outdoor & Garden,FakeVelvelVista,586.00
+86,Helmet,Sports & Recreation,FakeVelvelVista,317.00
+87,Supplement,Outdoor & Garden,FakeVelvelVista,144.00
+88,Smartwatch,Outdoor & Garden,FakeUrbanGlow,828.00
+89,Smartwatch,Home & Furniture,FakeLuxeAura,284.00
+90,Baseball Glove,Kitchen & Dining,FakeZenithStyle,998.00
+91,Memory Card,Electronics,FakeLuxeAura,579.00
+92,Tent,Home Appliances,FakeVelvelVista,921.00
+93,Speaker,Electronics,FakeVelvelVista,902.00
+94,Dog House,Health & Fitness,FakeZenithStyle,172.00
+95,Printer,Sports & Recreation,FakeZenithStyle,382.00
+96,Keyboard,Health & Fitness,FakeUrbanGlow,528.00
+97,Smart Doorbell,Electronics,FakeZenithStyle,574.00
+98,Smartwatch,Arts & Crafts,FakeVelvelVista,441.00
+99,Smartphone,Arts & Crafts,FakeZenithStyle,829.00
+100,Antivirus,Electronics,FakeEtherealEdge,192.00
