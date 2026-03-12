@@ -6,6 +6,12 @@ This project demonstrates the design and implementation of a **Data Warehouse & 
 
 The goal of the project is to showcase **end-to-end data engineering and analytics workflow**, including data modeling, data ingestion, transformation, and visualization.
 
+## 📊 Tableau Dashboard
+
+You can explore the interactive dashboard here:
+
+🔗 [View the Tableau Dashboard](https://public.tableau.com/views/OfflineRetailSalesProjectDashboard/OfflineRetailSalesAnalytics?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 ---
 
 ## 🏗️ Architecture Overview
